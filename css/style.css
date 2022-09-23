@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+h4 {
+    padding: 2%;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    background-color: #ededed;
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    font-family: "Tangerine", sans-serif;
+}
+
+figure a {
+    text-decoration: none;
+}
+
+/* centrerar de 4 bilderna på startsidan */
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+/* Centrerar Projektnamnen */
+.project-heading {
+    text-align: center;  
+}
+/* Storleken på bilderna på startsidan */
+.portfolio-img {
+    width: 600px;
+    height: 300px;
+    padding: 2%;
+    border-radius: 20px;
+    transition: .5s;
+}
+/* Hover effekt för bilderna på startsidan */
+.portfolio-img:hover {
+    opacity: 50%;
+    position: relative;
+    transform: translateY(-10px);
+}
+
+/* Om mig */
+.about {
+    margin: 0;
+    padding: 2% 2% 1% 2%;
+}
+
+/* Hero-bild */
+.hero-image {
+  /* Använder linear-gradient för att göra bakgrunden mörkare */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/about/berget.jpg");
+  /* hur mkt av bilden ska visas */
+  height: 65%;
+  /* centrerar bilden  */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* texten i mitten med animation */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Tangerine", sans-serif;
+  font-size: 58px;
+}
+
+.hero-hover {
+    transition: 1s;
+}
+
+.hero-text:hover .hero-hover {
+transform: translateX(30%);
+}
+
+/* Centrerar projektnamnen högst upp på alla projekt-sidor */
+.header-h1 {
+    text-align: center;
+    padding-top: 5%;
+    background-color: lavenderblush;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    transition: 1s;
+    max-width: 100%;
+}
+
+.div-header:hover .header-h1 {
+    transform: translateY(20%);
+}
+
+.projects-img {
+    width: 100%;
+    padding: 2%;
+    border-radius: 40px;
+}
+
+.about-project {
+    padding: 6%;
+}
+
+.important {
+    font-weight: bolder;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* Centrerar karusell */
+.carousel-inner .carousel-item img {
+    margin: auto;
+    padding-bottom: 2%;
+}
+
+/* Footer med kontaktinfo */
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    background-color: honeydew;
+    border-top: solid rgb(196, 195, 195) 1px;
+}
+
+.footer-h6 {
+    border-bottom: solid rgb(196, 195, 195) 1px;
+}
+
+.footer-img {
+    width: 30px;
+    height: 30px;
+}
+
+.fb-logo {
+    width: 35px;
+    height: 35px;
+}
